@@ -13,4 +13,4 @@ let start1 =  1000;
 console.log((((start-start1) * 100) / 1000) + " - процент выплаты за 12 месяцев");
     start += (start * percents) * 48;
 console.log((((start-start1) * 100) / 1000) + " - процент выплаты за " + years + " года");
-console.log((start-start1) + " - кол-во денежных средств за все время");
+console.log((start-start1) + " - кол-во денежных средств за все время"); 
