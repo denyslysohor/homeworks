@@ -9,7 +9,6 @@ let percents = 0.04;
 let start = 1000;
 let years = 4;
 let start1 =  1000;
-let i;
     start += (start * percents) * 12;
 console.log((((start-start1) * 100) / 1000) + " - процент выплаты за 12 месяцев");
     start += (start * percents) * 48;
