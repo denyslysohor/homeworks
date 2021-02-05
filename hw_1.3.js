@@ -5,22 +5,17 @@
 который выводит количество байт. 
 Для вычисления принимает счет
 что в каждой последующей единицы измерения хранится 1024 единиц более меньшего измерения. */
-let type = prompt("Введите одно из возможных значений (Byte, KB, MB, GB): ");
-let count = parseInt(prompt("Введите кол-во значения: "));
+let type = "KB"
+let count = 4
 let result = 0;
 if(type === "KB") {
     result = (count * 1024) + " bytes";
-    alert(result);
 }
 if(type === "MB") {
     result = (count * (1024**2)) + " bytes";
-    alert(result);
-}
 if(type === "GB") {
     result = (count * (1024**3)) + " bytes";
-    alert(result);
 } else if(type === "Byte") {
-    alert(count + " bytes");
+    }
 }
-
-
+console.log(result);
