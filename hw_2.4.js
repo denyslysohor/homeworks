@@ -1,12 +1,9 @@
 /* Найти сумму цифр числа которые кратны двум. */
-var n = 4347;
-var sum = 0;
-while (n > 0) {
-    sum += ((n % 10))
-    n = Math.floor(n/10)
+let num = "4347";
+let sum = 0;
+for(el of num) {
+    if(el % 2 === 0) {
+        sum += +el;
+    }
 }
-if(sum % 2 === 0)
-console.log(sum)
-else {
-    console.log("Введите другое число")
-}
+console.log(sum);
