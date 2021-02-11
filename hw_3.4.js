@@ -1,11 +1,9 @@
 /* Написать функцию, которая суммирует две матрицы. */
 function SumOfMatrix(matrix1, matrix2) {
-    let m = matrix1.length;
-    let n = matrix1[0].length;
     let resultM = [];
-    for (let i = 0; i < m; i++)
+    for (let i = 0; i < matrix1.length; i++)
      { resultM[i] = [];
-       for (let j = 0; j < n; j++) {
+       for (let j = 0; j < matrix1[0].length; j++) {
        resultM[i][j] = matrix1[i][j] + matrix2[i][j];
        }
      }
