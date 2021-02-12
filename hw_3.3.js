@@ -1,10 +1,10 @@
 /* Написать функцию, которая транспонирует матрицу. */
 function transpose(matrix) {
   let matrixT = [];
-  for(let x = 0; x < matrix.length; x++) {
-    matrixT[x] = [];
-    for(let y = 0; y < matrix[x].length; y++) {
-      matrixT[x][y] = matrix[y][x];
+  for(let i = 0; i < matrix.length; i++) {
+    matrixT[i] = [];
+    for(let j = 0; j < matrix[i].length; j++) {
+      matrixT[i][j] = matrix[j][i];
     }
   }
   return matrixT;
