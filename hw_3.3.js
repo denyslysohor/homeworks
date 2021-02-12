@@ -1,13 +1,13 @@
 /* Написать функцию, которая транспонирует матрицу. */
-function transpose(matrix, width, heigth) {
+function transpose(matrix) {
   let matrixT = [];
-  for(let x = 0; x < width; x++) {
+  for(let x = 0; x < matrix.length; x++) {
     matrixT[x] = [];
-    for(let y = 0; y < heigth; y++) {
+    for(let y = 0; y < matrix[x].length; y++) {
       matrixT[x][y] = matrix[y][x];
     }
   }
   return matrixT;
 }
-console.log(transpose([[4, 4], [5, 5]], 2, 2));
+console.log(transpose([[4, 4], [5, 5]]));
     
