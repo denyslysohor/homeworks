@@ -29,4 +29,4 @@ Object.getOwnPropertyNames(obj).forEach(function (el) {
         }
     );
 }
-WordSearcher(string);
+WordSearcher(string); 
