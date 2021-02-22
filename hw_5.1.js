@@ -3,7 +3,7 @@
 только по уникальным значениям. */
 let array = [1, 2, 4, [8, 4, 12], [13, 29, 11], [0, 5, 3, 11], 5, 6, 7, [3, 8, 21], 3];
 let uniqueArray = array.flat();
-function UniqueValues() {
+function uniqueValues(array) {
     let result = [];
     for(let i = 0; i < uniqueArray.length; i++) {
         for (let el of uniqueArray) {
@@ -15,4 +15,4 @@ function UniqueValues() {
           return result;
     }
 }
-console.log(UniqueValues(uniqueArray));
+console.log(uniqueValues(uniqueArray));
